@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 10px 50px 10px;
+}
+
+li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 17vh;
+}
+
+.hero-section h1 {
+    font-size: 160px;
+    font-weight: 700;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+footer {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+footer .options{
+    display: flex;
+}
+
+footer .options a{
+    /* padding:5px; */
+    margin: 40px 10px;
+}
+
+footer ul {
+    display: flex;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color:rgb(0, 132, 255);
+}
+
+.socials {
+    width: 100px;
+    height: 320px;
+    background-color: rgb(0, 132, 255);
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 25vh;
+}
+
+.social {
+    width: 100%;
+    height: 33%;
+}
+
+@media only screen and (max-width: 600px){
+    .socials{
+        display:none;
+    }
+
+    .hero-section h1 {
+        font-size: 80px;
+        font-weight: 700;
+    }
+}
+
+.wave{
+    fill: rgb(0,0,0);
+    width:100vw;
+    height:60vh;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+.social svg{
+    fill: rgb(255,255,255);
+}
+
+/* work page */
+
+.work-details{
+    width:50%;
+}
+
+.work-details tr{
+    text-align: center;
+}
+
+.work-details td{
+    padding: 30px;
+}
+
+.work-details tr td p{
+    line-height: 2;
+}
+
+.work-details a{
+    transition: 0.5s;
+}
+
+.subtitle{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .work-details{
+        width:80%;
+    }
+
+    .working-details td{
+        padding:5px;
+    }
+}
+
+.sub-pages-footer{
+    position: relative;
+}
+
+h2{
+    margin:0;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3{
+    font-weight: 600;
+}
+
+/* About-me */
+.about-me{
+    width:50%;
+    text-align:center;
+}
+
+.about-me img{
+    border-radius: 50%;
+    width:50%;
+    height:50%;
+    margin: 20px auto;
+}
+
+/* Stack Page */
+section .stack{
+    display:flex;
+    width: 100px;
+    height:100px;
+    justify-content: center;
+    margin:10px;
+}
+
+section .stack img{
+    margin:10px;
+}
+
+@media only screen and (max-width: 420px){
+    section .stack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+        width:100px;
+        height:auto;
+    }
+
+    section .stack img{
+        margin:10px;
+    }
+}
